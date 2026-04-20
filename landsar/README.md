@@ -43,14 +43,14 @@ Active development — core modeling, terrain integration, and simulation system
 ## Development History
 
 See full development log:  
-`/docs/devlog.md`
+[Development Log](docs/devlog.md)
 
 ---
 
 ## Roadmap
 
 See full development roadmap:  
-`/docs/roadmap.md`
+[Roadmap](docs/roadmap.md)
 
 ---
 
