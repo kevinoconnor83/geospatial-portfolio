@@ -1,23 +1,24 @@
 # LandSAR
 
-Terrain-aware search and rescue modeling built to improve decision-making and search efficiency in real-world environments.
+Terrain-aware search and rescue modeling designed to support real-world decision-making through geospatial analysis and probabilistic simulation.
 
 ---
 
 ## Overview
 
-LandSAR is a geospatial modeling tool designed to simulate subject movement and generate probable search areas using terrain, access routes, and environmental factors.
+LandSAR is a geospatial modeling system that simulates subject movement and generates probable search areas using terrain, access routes, and environmental factors.
 
-This project focuses on combining spatial data with probabilistic modeling to support more effective search planning.
+The system is designed to move beyond simple mapping and toward operational search planning support.
 
 ---
 
-## Key Features
+## Key Capabilities
 
-- Monte Carlo-based subject movement simulation  
+- Monte Carlo-based movement simulation  
 - Terrain-aware modeling using elevation and slope  
-- Integration of trails, roads, and access points  
-- Heatmap visualization of probable locations  
+- Integration of trails, roads, and access features  
+- Heatmap generation of probable subject locations  
+- Path-density modeling for likely movement corridors  
 - Sector-based search prioritization  
 
 ---
@@ -27,15 +28,35 @@ This project focuses on combining spatial data with probabilistic modeling to su
 Search and rescue operations are time-critical and resource-limited.
 
 LandSAR is designed to:
-- Reduce search time  
-- Improve resource allocation  
+- Improve search efficiency  
+- Support better resource allocation  
 - Provide data-driven search strategies  
+
+---
+
+## Development Status
+
+Active development — core modeling, terrain integration, and simulation systems in progress.
+
+---
+
+## Development History
+
+See full development log:  
+`/docs/devlog.md`
+
+---
+
+## Roadmap
+
+See full development roadmap:  
+`/docs/roadmap.md`
 
 ---
 
 ## Screenshots
 
-*(Add images here as the project develops)*
+*(Visualizations and outputs will be added here as development progresses)*
 
 ---
 
@@ -47,12 +68,6 @@ LandSAR is designed to:
 - OSMnx  
 - PySide6 (UI)  
 - Leaflet (mapping)
-
----
-
-## Status
-
-Active development — core modeling and terrain integration in progress.
 
 ---
 
