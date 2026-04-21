@@ -100,11 +100,7 @@ Geographic coordinates distort distance. This correction ensures real-world move
 
 ### Phase 4 — Distance-Based Movement Modeling
 
-<p align="center">
-  <img src="images/figure_004_projected_distances.png" width="600"/>
-</p>
-
-**Probability Map with Real Roads + Projected Distances**
+<p align="center"><img src="images/figure_004_projected_distances.png" width="600"/></p>
 
 **What changed:**
 
@@ -123,15 +119,11 @@ Geographic coordinates distort distance. This correction ensures real-world move
 
 This is the first step toward modeling **real human movement limitations** instead of abstract spread.
 
----
+### ───────────────────────────────────────────────────────────────────────
 
-## 🔹 Phase 5 — Time & Delay Awareness
+## Phase 5 — Time & Delay Awareness
 
-<p align="center">
-  <img src="images/figure_005_time_delay.png" width="600"/>
-</p>
-
-**Probability Map with Time Since LKP + Report Delay**
+<p align="center"><img src="images/figure_005_time_delay.png" width="600"/></p>
 
 **What changed:**
 
@@ -150,15 +142,11 @@ This is the first step toward modeling **real human movement limitations** inste
 
 Time is one of the most critical SAR variables — this introduces **temporal realism into the model**.
 
----
+### ───────────────────────────────────────────────────────────────────────
 
-## 🔹 Phase 6 — Sectorization (Search Prioritization)
+## Phase 6 — Sectorization (Search Prioritization)
 
-<p align="center">
-  <img src="images/figure_006_sectorization.png" width="600"/>
-</p>
-
-**Probability Map with Sector Assignments (A / B / C)**
+<p align="center"><img src="images/figure_006_sectorization.png" width="600"/></p>
 
 **What changed:**
 
@@ -179,15 +167,11 @@ Time is one of the most critical SAR variables — this introduces **temporal re
 
 This converts analysis into **actionable search assignments**, aligning with real SAR operations.
 
----
+### ───────────────────────────────────────────────────────────────────────
 
-## 🔹 Phase 7 — Operational Search Footprint
+## Phase 7 — Operational Search Footprint
 
-<p align="center">
-  <img src="images/figure_007_search_footprint.png" width="600"/>
-</p>
-
-**Final Search Coverage & Operational Footprint**
+<p align="center"><img src="images/figure_007_search_footprint.png" width="600"/></p>
 
 **What changed:**
 
@@ -205,6 +189,9 @@ This converts analysis into **actionable search assignments**, aligning with rea
 **Why this matters:**
 
 This represents the transition from modeling to **deployable field strategy** — exactly what SAR teams need.
+
+### ───────────────────────────────────────────────────────────────────────
+
 
 ---
 
