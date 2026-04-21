@@ -58,8 +58,6 @@ See full development roadmap:
 
 ### Phase 1 - Baseline Probability Model
 
-#### Initial Probability Map
-
 <p align= "center"><img src="images/figure_001_initial_probability.png" width="600"</p>
 
 - Radial probability distribution from Last Known Position (LKP)
@@ -72,8 +70,6 @@ This established the foundation for visualizing probability fields and validatin
 ### ───────────────────────────────────────────────────────────────────────
 
 ### Phase 2 - Real-World Constraints Introduced
-
-#### Probability Map with Roads + Simple Slope Penalty
 
 <p align= "center"><img src="images/figure_002_roads_slope.png" width="600"</p>
 
@@ -91,8 +87,6 @@ This marks the transition from a theoretical model to an environment-aware simul
 
 ### Phase 3 - Real-World Constraints Introduced
 
-#### Probability Map with Projected Distances (UTM)
-
 <p align= "center"><img src="images/figure_003_projected.png" width="600"</p>
 
 - Converted simulation from lat/lon to projected CRS (UTM)
@@ -102,6 +96,115 @@ This marks the transition from a theoretical model to an environment-aware simul
 Why this matters:
 Geographic coordinates distort distance. This correction ensures real-world movement accuracy.
 
+### ───────────────────────────────────────────────────────────────────────
+
+### Phase 4 — Distance-Based Movement Modeling
+
+<p align="center">
+  <img src="images/figure_004_projected_distances.png" width="600"/>
+</p>
+
+**Probability Map with Real Roads + Projected Distances**
+
+**What changed:**
+
+- Movement distance constraints introduced  
+- Transition from random dispersion to bounded travel behavior  
+- Spatial clustering begins to emerge  
+
+**What you're seeing:**
+
+- Heatmap:
+  - Concentrations now reflect reachable zones  
+- Road network:
+  - Still influencing directional movement  
+
+**Why this matters:**
+
+This is the first step toward modeling **real human movement limitations** instead of abstract spread.
+
+---
+
+## 🔹 Phase 5 — Time & Delay Awareness
+
+<p align="center">
+  <img src="images/figure_005_time_delay.png" width="600"/>
+</p>
+
+**Probability Map with Time Since LKP + Report Delay**
+
+**What changed:**
+
+- Time since last known point applied  
+- Reporting delay incorporated into spread  
+- Expansion becomes time-dependent  
+
+**What you're seeing:**
+
+- Wider probability distribution:
+  - Increased uncertainty over time  
+- Heat zones:
+  - Reflect time-adjusted likelihood  
+
+**Why this matters:**
+
+Time is one of the most critical SAR variables — this introduces **temporal realism into the model**.
+
+---
+
+## 🔹 Phase 6 — Sectorization (Search Prioritization)
+
+<p align="center">
+  <img src="images/figure_006_sectorization.png" width="600"/>
+</p>
+
+**Probability Map with Sector Assignments (A / B / C)**
+
+**What changed:**
+
+- Search area divided into priority sectors  
+- High-probability zones grouped spatially  
+- Non-overlapping operational regions created  
+
+**What you're seeing:**
+
+- Sector A:
+  - Highest priority  
+- Sector B:
+  - Moderate probability  
+- Sector C:
+  - Lower probability  
+
+**Why this matters:**
+
+This converts analysis into **actionable search assignments**, aligning with real SAR operations.
+
+---
+
+## 🔹 Phase 7 — Operational Search Footprint
+
+<p align="center">
+  <img src="images/figure_007_search_footprint.png" width="600"/>
+</p>
+
+**Final Search Coverage & Operational Footprint**
+
+**What changed:**
+
+- Search areas consolidated into continuous coverage zones  
+- Redundant overlap reduced  
+- Efficient sweep regions generated  
+
+**What you're seeing:**
+
+- Cyan boundaries:
+  - Searchable operational zones  
+- Red cells:
+  - High-priority targets within sectors  
+
+**Why this matters:**
+
+This represents the transition from modeling to **deployable field strategy** — exactly what SAR teams need.
 
 ---
 
