@@ -188,9 +188,121 @@ This converts analysis into **actionable search assignments**, aligning with rea
 
 **Why this matters:**
 
-This represents the transition from modeling to **deployable field strategy** — exactly what SAR teams need.
+This represents the transition from modeling to **deployable field strategy**, exactly what SAR teams need.
 
 ### ───────────────────────────────────────────────────────────────────────
+
+## Phase 8 — Probability Refinement & Noise Reduction
+
+<p align="center"><img src="images/figure_008_noise_reduction.png" width="600"/></p>
+
+Improve clarity of probability outputs and reduce visual / statistical noise from raw Monte Carlo results.
+
+**What changed:**
+
+- Smoothed probability heatmaps for better readability
+- Reduced random scatter artifacts from particle dispersion
+- Tuned weighting so high-probability zones stand out clearly
+- Improved contrast between high vs low likelihood areas
+
+**What This Proved:**
+
+- The system produces interpretable outputs, not just raw simulations
+- Decision-makers can quickly identify priority areas
+- Visual clarity aligns with operational expectations
+
+Clean visualization is critical. A good model is useless if teams can’t interpret it quickly in the field.
+
+### ───────────────────────────────────────────────────────────────────────
+
+## Phase 9 — Time-Based Expansion & Scenario Scaling
+
+<p align="center"><img src="images/figure_009_scenario_scaling.png" width="600"/></p>
+
+Validate how the model behaves as time since LKP increases.
+
+**What changed:**
+
+- Dynamic expansion of probability fields over time
+- Scaling of subject travel distance based on elapsed time
+- Consistent behavior modeling across multiple time intervals
+- Comparison outputs (e.g., 3.7 hrs vs 4.0 hrs vs 4.5 hrs)
+
+**What This Proved:**
+- The system maintains logical spatial growth
+- High-probability zones evolve instead of randomly shifting
+- Model remains stable under changing temporal inputs
+
+Time is the dominant variable in SAR — expansion must be realistic, not exponential chaos.
+
+### ───────────────────────────────────────────────────────────────────────
+
+## Phase 10 — Sector Optimization & Prioritization Logic
+
+<p align="center"><img src="images/figure_010_sector_optimization.png" width="600"/></p>
+
+Refine sector generation to better match probability distribution and search efficiency.
+
+**What changed:**
+
+- Adjusted sector boundaries to better align with high-density zones
+- Reduced overlap and dead space between sectors
+- Improved labeling clarity and placement
+- Balanced sector sizes for practical deployment
+
+**What This Proved:**
+
+- Sectoring is not just geometric; it is probability-driven
+- Search areas can be optimized for coverage + efficiency
+- Output is suitable for real-world tasking
+
+Good sectors follow probability, not arbitrary grids.
+
+### ───────────────────────────────────────────────────────────────────────
+
+## Phase 11 — High-Density Sector Scaling (Multi-Sector Deployment)
+
+<p align="center"><img src="images/figure_011_sector_scaling.png" width="600"/></p>
+
+Scale the system to support larger search operations with more granular control.
+
+**What changed:**
+
+- 12-sector (A–L) configuration
+- Target sector sizing (~80,000 sq m)
+- Increased granularity for large-area searches
+- Maintained non-overlapping sector logic at scale
+
+**What This Proved:**
+
+- The system scales from small team → large coordinated search
+- Maintains structure even with complex segmentation
+- Supports advanced planning scenarios
+
+### ───────────────────────────────────────────────────────────────────────
+
+## Phase 12 — Pre-UI Operational Output (Command-Ready State)
+
+<p align="center"><img src="images/figure_012_operational_output.png" width="600"/></p>
+
+Finalize backend outputs before UI integration — ensuring the system is operationally valid.
+
+**What changed:**
+
+- Clean map outputs ready for briefing or print
+- Integrated:
+    - Subject profile
+    - Time since LKP
+    - Report delay
+    - Sector layout
+    - Consistent styling across all outputs
+    - Readable annotations for command-level use
+
+**What This Proved:**
+
+- The system functions as a standalone SAR planning tool
+- Outputs are usable without additional processing
+- Ready for UI layer integration
 
 
 ---
