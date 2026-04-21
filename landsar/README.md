@@ -177,7 +177,7 @@ This converts analysis into **actionable search assignments**, aligning with rea
 ### ───────────────────────────────────────────────────────────────────────
 
 <h3>
-  <a align="center"><href="images/figure_007_search_footprint.png" width="600">
+  <a align="center" href="images/figure_007_search_footprint.png" width="600">
     Phase 7 - Operational Search Footprint
   </a>
 </h3>
