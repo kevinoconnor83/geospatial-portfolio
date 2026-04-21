@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 
-input_folder = "images"
+input_folder = r"C:\Users\kevin\OneDrive\Desktop\Kevin\Shallow_Water_GeoAnalytics\git\geospatial-portfolio\landsar\images"
 output_folder = "images_resized"
 os.makedirs(output_folder, exist_ok=True)
 
