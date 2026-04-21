@@ -57,9 +57,10 @@ See full development roadmap:
 ## Images
 
 Phase 1 - Baseline Probability Model
-<p align= "center"><img src="images/figure_001_initial_probability.png" width="600"</p>
 
 Initial Probability Map
+
+<p align= "center"><img src="images/figure_001_initial_probability.png" width="600"</p>
 
 Radial probability distribution from Last Known Position (LKP)
 No terrain, roads, or behavioral constraints
@@ -67,9 +68,12 @@ Purely mathematical decay model
 
 Why this matters:
 This established the foundation for visualizing probability fields and validating the rendering pipeline.
-[![Initial Probability Map](images/figure_001_initial_probability.png)](images/figure_001_initial_probability.png)
 
-Real-World Constraints Introduced - Probability Map with Roads + Simple Slope Penalty
+Phase 2 - Real-World Constraints Introduced
+
+Probability Map with Roads + Simple Slope Penalty
+
+<p align= "center"><img src="images/figure_002_roads_slope.png" width="600"</p>
 
 Integrated real-world road networks (OSMnx)
 Added slope penalty from DEM data
@@ -82,7 +86,6 @@ Heatmap = accumulated probability density
 
 Why this matters:
 This marks the transition from a theoretical model to an environment-aware simulation.
-[![Roads Slope Map](images/figure_002_roads_slope.png)](images/figure_002_roads_slope.png)
 
 ---
 
