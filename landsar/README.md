@@ -57,7 +57,7 @@ See full development roadmap:
 ## Images
 
 <h2>
-  <a href="images/figure_001_initial_probability.png"
+  <a href="images/figure_001_initial_probability.png">
   Phase 1 - Baseline Probability Model
   </a>
 </h2>
