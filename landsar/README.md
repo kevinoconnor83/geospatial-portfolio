@@ -58,7 +58,7 @@ See full development roadmap:
 
 ### Phase 1 - Baseline Probability Model
 
-Initial Probability Map
+#### Initial Probability Map
 
 <p align= "center"><img src="images/figure_001_initial_probability.png" width="600"</p>
 
@@ -69,9 +69,11 @@ Purely mathematical decay model
 Why this matters:
 This established the foundation for visualizing probability fields and validating the rendering pipeline.
 
+
+
 ### Phase 2 - Real-World Constraints Introduced
 
-Probability Map with Roads + Simple Slope Penalty
+#### Probability Map with Roads + Simple Slope Penalty
 
 <p align= "center"><img src="images/figure_002_roads_slope.png" width="600"</p>
 
