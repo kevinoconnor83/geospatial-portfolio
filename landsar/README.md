@@ -56,7 +56,29 @@ See full development roadmap:
 
 ## Screenshots
 
-*(Visualizations and outputs will be added here as development progresses)*
+Baseline Probability Model - Initial Probability Map
+
+Radial probability distribution from Last Known Position (LKP)
+No terrain, roads, or behavioral constraints
+Purely mathematical decay model
+
+Why this matters:
+This established the foundation for visualizing probability fields and validating the rendering pipeline.
+![Initial Probability Map](images/figure_001_initial_probability.png)
+
+Real-World Constraints Introduced - Probability Map with Roads + Simple Slope Penalty
+
+Integrated real-world road networks (OSMnx)
+Added slope penalty from DEM data
+Particle movement influenced by terrain + infrastructure
+
+What you're seeing:
+
+Blue lines = simulated movement paths
+Heatmap = accumulated probability density
+
+Why this matters:
+This marks the transition from a theoretical model to an environment-aware simulation.
 
 ---
 
