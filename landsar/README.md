@@ -54,9 +54,12 @@ See full development roadmap:
 
 ---
 
-## Screenshots
+## Images
 
-Baseline Probability Model - Initial Probability Map
+Phase 1 - Baseline Probability Model
+<p align= "center"><img src="images/figure_001_initial_probability.png" width="600"</p>
+
+Initial Probability Map
 
 Radial probability distribution from Last Known Position (LKP)
 No terrain, roads, or behavioral constraints
