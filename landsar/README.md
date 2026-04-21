@@ -69,7 +69,9 @@ Purely mathematical decay model
 Why this matters:
 This established the foundation for visualizing probability fields and validating the rendering pipeline.
 
------
+---
+### Phase Transition
+---
 
 ### Phase 2 - Real-World Constraints Introduced
 
