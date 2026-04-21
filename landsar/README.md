@@ -56,13 +56,11 @@ See full development roadmap:
 
 ## Images
 
-<h4>
-  <a align="center" href="images/figure_001_initial_probability.png" width="600"/>
-  Phase 1 - Baseline Probability Model
+<h4 align="center">
+  <a href="images/figure_001_initial_probability.png" width="600"/>
+    Phase 1 - Baseline Probability Model
   </a>
 </h4>
-
-
 
 - Radial probability distribution from Last Known Position (LKP)
 - No terrain, roads, or behavioral constraints
