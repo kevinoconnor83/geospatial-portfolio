@@ -57,7 +57,7 @@ See full development roadmap:
 ## Images
 
 <h3>
-  <a href="images_resized/figure_001_initial_probability.png">
+  <a href="images/figure_001_initial_probability.png">
     Phase 1 - Baseline Probability Model
   </a>
 </h3>
@@ -73,7 +73,7 @@ This established the foundation for visualizing probability fields and validatin
 ### ───────────────────────────────────────────────────────────────────────
 
 <h3>
-  <a href="images_resized/figure_002_roads_slope.png">
+  <a href="images/figure_002_roads_slope.png">
     Phase 2 - Real-World Constraints Introduced
   </a>
 </h3>
@@ -91,7 +91,7 @@ Marks the transition from a theoretical model to an environment-aware simulation
 ### ───────────────────────────────────────────────────────────────────────
 
 <h3>
-  <a href="images_resized/figure_003_projected.png">
+  <a href="images/figure_003_projected.png">
     Phase 3 - Spatial Accuracy (Projection Fix)
   </a>
 </h3>
@@ -106,7 +106,7 @@ Geographic coordinates distort distance. This correction ensures real-world move
 ### ───────────────────────────────────────────────────────────────────────
 
 <h3>
-  <a href="images_resized/figure_004_projected_distances.png">
+  <a href="images/figure_004_projected_distances.png">
     Phase 4 - Distance-Based Movement Modeling
   </a>
 </h3>
@@ -128,7 +128,7 @@ This is the first step toward modeling **real human movement limitations** inste
 ### ───────────────────────────────────────────────────────────────────────
 
 <h3>
-  <a href="images_resized/figure_005_time_delay.png">
+  <a href="images/figure_005_time_delay.png">
     Phase 5 - Time & Delay Awareness
   </a>
 </h3>
@@ -150,7 +150,7 @@ Time is one of the most critical SAR variables — this introduces **temporal re
 ### ───────────────────────────────────────────────────────────────────────
 
 <h3>
-  <a href="images_resized/figure_006_sectorization.png">
+  <a href="images/figure_006_sectorization.png">
     Phase 6 - Sectorization (Search Prioritization)
   </a>
 </h3>
@@ -177,7 +177,7 @@ This converts analysis into **actionable search assignments**, aligning with rea
 ### ───────────────────────────────────────────────────────────────────────
 
 <h3>
-  <a href="images_resized/figure_007_search_footprint.png">
+  <a href="images/figure_007_search_footprint.png">
     Phase 7 - Operational Search Footprint
   </a>
 </h3>
@@ -203,7 +203,7 @@ This represents the transition from modeling to **deployable field strategy**, e
 
 
 <h3>
-  <a href="images_resized/figure_008_noise_reduction.png">
+  <a href="images/figure_008_noise_reduction.png">
     Phase 8 - Probability Refinement & Noise Reduction
   </a>
 </h3>
@@ -228,7 +228,7 @@ Clean visualization is critical. A good model is useless if teams can’t interp
 ### ───────────────────────────────────────────────────────────────────────
 
 <h3>
-  <a href="images_resized/figure_009_scenario_scaling.png">
+  <a href="images/figure_009_scenario_scaling.png">
     Phase 9 - Time-Based Expansion & Scenario Scaling
   </a>
 </h3>
@@ -252,7 +252,7 @@ Time is the dominant variable in SAR — expansion must be realistic, not expone
 ### ───────────────────────────────────────────────────────────────────────
 
 <h3>
-  <a href="images_resized/figure_010_sector_optimization.png">
+  <a href="images/figure_010_sector_optimization.png">
     Phase 10 - Sector Optimization & Prioritization Logic
   </a>
 </h3>
@@ -277,7 +277,7 @@ Good sectors follow probability, not arbitrary grids.
 ### ───────────────────────────────────────────────────────────────────────
 
 <h3>
-  <a href="images_resized/figure_011_sector_scaling.png">
+  <a href="images/figure_011_sector_scaling.png">
     Phase 11 - High-Density Sector Scaling (Multi-Sector Deployment)
   </a>
 </h3>
@@ -300,7 +300,7 @@ Scale the system to support larger search operations with more granular control.
 ### ───────────────────────────────────────────────────────────────────────
 
 <h3>
-  <a href="images_resized/figure_012_operational_output.png">
+  <a href="images/figure_012_operational_output.png">
     Phase 12 - Pre-UI Operational Output
   </a>
 </h3>
