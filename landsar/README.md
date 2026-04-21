@@ -69,7 +69,7 @@ See full development roadmap:
 Why this matters:
 This established the foundation for visualizing probability fields and validating the rendering pipeline.
 
-### ──────────────────────────────────────────────────────────────────────────────────────────
+### ────────────────────────────────────────────────────────────────────────
 
 ### Phase 2 - Real-World Constraints Introduced
 
@@ -87,9 +87,20 @@ Heatmap = accumulated probability density
 Why this matters:
 This marks the transition from a theoretical model to an environment-aware simulation.
 
-### ──────────────────────────────────────────────────────────────────────────────────────────
+### ────────────────────────────────────────────────────────────────────────
 
 ### Phase 3 - Real-World Constraints Introduced
+
+#### Probability Map with Projected Distances (UTM)
+
+<p align= "center"><img src="images/figure_003_projected.png" width="600"</p>
+
+- Converted simulation from lat/lon to projected CRS (UTM)
+- Enabled accurate distance calculations
+- Eliminated geographic distortion
+
+Why this matters:
+Geographic coordinates distort distance. This correction ensures real-world movement accuracy.
 
 
 ---
