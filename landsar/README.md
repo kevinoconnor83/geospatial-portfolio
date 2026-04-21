@@ -176,11 +176,11 @@ This converts analysis into **actionable search assignments**, aligning with rea
 
 ### ───────────────────────────────────────────────────────────────────────
 
-<p align="center">
+<h3>
   <a href="images/figure_007_search_footprint.png">
-    <strong>Phase 7 - Operational Search Footprint</strong>
+    Phase 7 - Operational Search Footprint
   </a>
-</p>
+</h3>
 
 **What changed:**
 
@@ -201,9 +201,12 @@ This represents the transition from modeling to **deployable field strategy**, e
 
 ### ───────────────────────────────────────────────────────────────────────
 
-## Phase 8 — Probability Refinement & Noise Reduction
 
-<p align="center"><img src="images/figure_008_noise_reduction.png" width="600"/></p>
+<h3>
+  <a href="images/figure_008_noise_reduction.png">
+    Phase 8 - Probability Refinement & Noise Reduction
+  </a>
+</h3>
 
 Improve clarity of probability outputs and reduce visual / statistical noise from raw Monte Carlo results.
 
@@ -224,9 +227,11 @@ Clean visualization is critical. A good model is useless if teams can’t interp
 
 ### ───────────────────────────────────────────────────────────────────────
 
-## Phase 9 — Time-Based Expansion & Scenario Scaling
-
-<p align="center"><img src="images/figure_009_scenario_scaling.png" width="600"/></p>
+<h3>
+  <a href="images/figure_009_scenario_scaling.png">
+    Phase 9 - Time-Based Expansion & Scenario Scaling
+  </a>
+</h3>
 
 Validate how the model behaves as time since LKP increases.
 
@@ -246,9 +251,11 @@ Time is the dominant variable in SAR — expansion must be realistic, not expone
 
 ### ───────────────────────────────────────────────────────────────────────
 
-## Phase 10 — Sector Optimization & Prioritization Logic
-
-<p align="center"><img src="images/figure_010_sector_optimization.png" width="600"/></p>
+<h3>
+  <a href="images/figure_010_sector_optimization.png">
+    Phase 10 - Sector Optimization & Prioritization Logic
+  </a>
+</h3>
 
 Refine sector generation to better match probability distribution and search efficiency.
 
@@ -269,9 +276,11 @@ Good sectors follow probability, not arbitrary grids.
 
 ### ───────────────────────────────────────────────────────────────────────
 
-## Phase 11 — High-Density Sector Scaling (Multi-Sector Deployment)
-
-<p align="center"><img src="images/figure_011_sector_scaling.png" width="600"/></p>
+<h3>
+  <a href="images/figure_011_sector_scaling.png">
+    Phase 11 - High-Density Sector Scaling (Multi-Sector Deployment)
+  </a>
+</h3>
 
 Scale the system to support larger search operations with more granular control.
 
@@ -290,9 +299,11 @@ Scale the system to support larger search operations with more granular control.
 
 ### ───────────────────────────────────────────────────────────────────────
 
-## Phase 12 — Pre-UI Operational Output (Command-Ready State)
-
-<p align="center"><img src="images/figure_012_operational_output.png" width="600"/></p>
+<h3>
+  <a href="images/figure_012_operational_output.png">
+    Phase 12 - Pre-UI Operational Output
+  </a>
+</h3>
 
 Finalize backend outputs before UI integration — ensuring the system is operationally valid.
 
