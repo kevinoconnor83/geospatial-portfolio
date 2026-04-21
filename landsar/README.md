@@ -64,7 +64,7 @@ Purely mathematical decay model
 
 Why this matters:
 This established the foundation for visualizing probability fields and validating the rendering pipeline.
-![Image](images/figure_001.png)
+[![Initial Probability Map](images/figure_001_initial_probability.png)](images/figure_001_initial_probability.png)
 
 Real-World Constraints Introduced - Probability Map with Roads + Simple Slope Penalty
 
@@ -79,6 +79,7 @@ Heatmap = accumulated probability density
 
 Why this matters:
 This marks the transition from a theoretical model to an environment-aware simulation.
+[![Roads Slope Map](images/figure_002_roads_slope.png)](images/figure_002_roads_slope.png)
 
 ---
 
