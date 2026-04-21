@@ -62,8 +62,6 @@ See full development roadmap:
   </a>
 </h3>
 
-
-
 - Radial probability distribution from Last Known Position (LKP)
 - No terrain, roads, or behavioral constraints
 - Purely mathematical decay model
@@ -74,9 +72,11 @@ This established the foundation for visualizing probability fields and validatin
 
 ### ───────────────────────────────────────────────────────────────────────
 
-### Phase 2 - Real-World Constraints Introduced
-
-<p align= "center"><img src="images/figure_002_roads_slope.png" width="600"</p>
+<h3>
+  <a href="images/figure_002_roads_slope.png">
+    Phase 2 - Real-World Constraints Introduced
+  </a>
+</h3>
 
 - Integrated real-world road networks (OSMnx)
 - Added slope penalty from DEM data
