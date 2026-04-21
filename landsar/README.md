@@ -69,7 +69,7 @@ See full development roadmap:
 Why this matters:
 This established the foundation for visualizing probability fields and validating the rendering pipeline.
 
-### ────────────────────────────────────────────────────────────────────────
+### ───────────────────────────────────────────────────────────────────────
 
 ### Phase 2 - Real-World Constraints Introduced
 
@@ -87,7 +87,7 @@ Heatmap = accumulated probability density
 Why this matters:
 This marks the transition from a theoretical model to an environment-aware simulation.
 
-### ────────────────────────────────────────────────────────────────────────
+### ───────────────────────────────────────────────────────────────────────
 
 ### Phase 3 - Real-World Constraints Introduced
 
