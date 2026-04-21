@@ -62,16 +62,14 @@ See full development roadmap:
 
 <p align= "center"><img src="images/figure_001_initial_probability.png" width="600"</p>
 
-Radial probability distribution from Last Known Position (LKP)
-No terrain, roads, or behavioral constraints
-Purely mathematical decay model
+- Radial probability distribution from Last Known Position (LKP)
+- No terrain, roads, or behavioral constraints
+- Purely mathematical decay model
 
 Why this matters:
 This established the foundation for visualizing probability fields and validating the rendering pipeline.
 
----
-### Phase Transition
----
+### ─────────────────────────────────────────────
 
 ### Phase 2 - Real-World Constraints Introduced
 
@@ -79,9 +77,9 @@ This established the foundation for visualizing probability fields and validatin
 
 <p align= "center"><img src="images/figure_002_roads_slope.png" width="600"</p>
 
-Integrated real-world road networks (OSMnx)
-Added slope penalty from DEM data
-Particle movement influenced by terrain + infrastructure
+- Integrated real-world road networks (OSMnx)
+- Added slope penalty from DEM data
+- Particle movement influenced by terrain + infrastructure
 
 What you're seeing:
 
@@ -90,6 +88,11 @@ Heatmap = accumulated probability density
 
 Why this matters:
 This marks the transition from a theoretical model to an environment-aware simulation.
+
+### ─────────────────────────────────────────────
+
+### Phase 3 - Real-World Constraints Introduced
+
 
 ---
 
