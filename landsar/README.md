@@ -86,13 +86,15 @@ Blue lines = simulated movement paths
 Heatmap = accumulated probability density
 
 Why this matters:
-This marks the transition from a theoretical model to an environment-aware simulation.
+Marks the transition from a theoretical model to an environment-aware simulation.
 
 ### ───────────────────────────────────────────────────────────────────────
 
-### Phase 3 - Real-World Constraints Introduced
-
-<p align= "center"><img src="images/figure_003_projected.png" width="600"</p>
+<h3>
+  <a href="images/figure_003_projected.png">
+    Phase 3 - Spatial Accuracy (Projection Fix)
+  </a>
+</h3>
 
 - Converted simulation from lat/lon to projected CRS (UTM)
 - Enabled accurate distance calculations
@@ -103,18 +105,17 @@ Geographic coordinates distort distance. This correction ensures real-world move
 
 ### ───────────────────────────────────────────────────────────────────────
 
-### Phase 4 — Distance-Based Movement Modeling
-
-<p align="center"><img src="images/figure_004_projected_distances.png" width="600"/></p>
+<h3>
+  <a href="images/figure_004_projected_distances.png">
+    Phase 4 - Distance-Based Movement Modeling
+  </a>
+</h3>
 
 **What changed:**
 
 - Movement distance constraints introduced  
 - Transition from random dispersion to bounded travel behavior  
 - Spatial clustering begins to emerge  
-
-**What you're seeing:**
-
 - Heatmap:
   - Concentrations now reflect reachable zones  
 - Road network:
@@ -126,18 +127,17 @@ This is the first step toward modeling **real human movement limitations** inste
 
 ### ───────────────────────────────────────────────────────────────────────
 
-## Phase 5 — Time & Delay Awareness
-
-<p align="center"><img src="images/figure_005_time_delay.png" width="600"/></p>
+<h3>
+  <a href="images/figure_005_time_delay.png">
+    Phase 5 - Time & Delay Awareness
+  </a>
+</h3>
 
 **What changed:**
 
 - Time since last known point applied  
 - Reporting delay incorporated into spread  
 - Expansion becomes time-dependent  
-
-**What you're seeing:**
-
 - Wider probability distribution:
   - Increased uncertainty over time  
 - Heat zones:
@@ -149,9 +149,11 @@ Time is one of the most critical SAR variables — this introduces **temporal re
 
 ### ───────────────────────────────────────────────────────────────────────
 
-## Phase 6 — Sectorization (Search Prioritization)
-
-<p align="center"><img src="images/figure_006_sectorization.png" width="600"/></p>
+<h3>
+  <a href="images/figure_006_sectorization.png">
+    Phase 6 - Sectorization (Search Prioritization)
+  </a>
+</h3>
 
 **What changed:**
 
@@ -174,9 +176,11 @@ This converts analysis into **actionable search assignments**, aligning with rea
 
 ### ───────────────────────────────────────────────────────────────────────
 
-## Phase 7 — Operational Search Footprint
-
-<p align="center"><img src="images/figure_007_search_footprint.png" width="600"/></p>
+<h3>
+  <a href="images/figure_007_search_footprint.png">
+    Phase 7 - Operational Search Footprint
+  </a>
+</h3>
 
 **What changed:**
 
