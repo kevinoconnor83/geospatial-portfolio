@@ -56,11 +56,11 @@ See full development roadmap:
 
 ## Images
 
-<h4>
+<h3>
   <a href="images/figure_001_initial_probability.png">
     Phase 1 - Baseline Probability Model
   </a>
-</h4>
+</h3>
 
 
 
