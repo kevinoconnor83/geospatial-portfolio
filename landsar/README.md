@@ -56,9 +56,8 @@ See full development roadmap:
 
 ## Images
 
-### [](<p align= "center"><img src="" width="600"</p>)
 <h2>
-  🔷 <a href="images/figure_001_initial_probability.png">
+  <a href="images/figure_001_initial_probability.png">
   Phase 1 - Baseline Probability Model
   </a>
 </h2>
@@ -74,6 +73,7 @@ See full development roadmap:
 - Purely mathematical decay model
 
 Why this matters:
+
 This established the foundation for visualizing probability fields and validating the rendering pipeline.
 
 ### ───────────────────────────────────────────────────────────────────────
