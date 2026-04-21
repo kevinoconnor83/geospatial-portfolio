@@ -176,13 +176,17 @@ This converts analysis into **actionable search assignments**, aligning with rea
 
 ### ───────────────────────────────────────────────────────────────────────
 
-<h3>
-  <p align="center">
+<h3 align="center">
   <a href="images/figure_007_search_footprint.png">
     Phase 7 - Operational Search Footprint
   </a>
-  </p width="600">
 </h3>
+
+<p align="center">
+  <a href="images/figure_007_search_footprint.png">
+    <img src="images/figure_007_search_footprint.png" width="600">
+  </a>
+</p>
 
 **What changed:**
 
