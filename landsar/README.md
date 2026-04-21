@@ -64,7 +64,7 @@ Purely mathematical decay model
 
 Why this matters:
 This established the foundation for visualizing probability fields and validating the rendering pipeline.
-![Initial Probability Map](docs/screenshots/figure_001_initial_probability.png)
+![Image](images/figure_001.png)
 
 Real-World Constraints Introduced - Probability Map with Roads + Simple Slope Penalty
 
