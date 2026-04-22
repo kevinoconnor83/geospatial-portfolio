@@ -325,29 +325,49 @@ Defined working-state baseline:
 
 ---
 
-## Current Core System Themes
+### April 20, 2026 - Terrain Bias $ Road Overlay Breakthrough
 
-* LKP-centered modeling
-* Time-based movement expansion
-* Terrain and slope penalties
-* Route and road bias
-* Grid-based probability surfaces
-* Sector prioritization
-* Heatmap visualization
-* Monte Carlo simulation
-* Behavioral modeling (in progress)
-* Interactive map-based UI
+Major progress on PATHSAR simulation realism. Successfully integrated road overlays with terrain-influenced Monte Carlo movement. The system is now producing believable directional bias based on terrain and subject behavior.
 
----
+**What Changed:**
 
-## Development Practice Going Forward
+1. Road Overlay – Working State
 
-* Continue logging major milestones and system changes
-* Keep entries focused on:
+- Road network successfully loaded and rendered on map
+- Visual confirmation of road influence pathways
+- Cached loading working as expected
+- Roads now provide a structural reference layer for movement modeling
 
-  * Features
-  * Fixes
-  * Design decisions
-* Maintain clarity and brevity for readability
+2. Terrain Bias – Functional
+
+- Terrain weighting is now actively influencing particle movement
+- Simulation produced a clear directional trend (NE → SW)
+- Behavior aligns with:
+- Slope penalties
+- Terrain type (wooded)
+- Lost hiker profile tendencies
+
+3. Monte Carlo Output – Visible + Interpretable
+
+- Particle count returning properly (150)
+- Heat cells and path cells generating
+- Particle lines rendering on map
+- Movement patterns now tell a story, not just random spread
+
+**Key Observation:**
+
+Terrain + behavior bias resulted in a natural corridor forming from north-east to south-west, suggesting:
+
+Drainage or terrain-following behavior is working
+Simulation is beginning to reflect real-world lost person movement patterns, not just probability blobs
+
+This is a critical milestone toward operational realism.
+
+⚠️ Known Issue
+TypeError: bbox_to_poly() takes 1 positional argument but 4 were given
+Occurs during bounding box handling
+
+Does not block simulation output, but needs cleanup
+Likely mismatch between helper function signature and call
 
 ---
