@@ -371,3 +371,119 @@ Does not block simulation output, but needs cleanup
 Likely mismatch between helper function signature and call
 
 ---
+
+## Devlog Update: PATHSAR UI + Field Layer Evolution
+
+### April 28–29, 2026
+
+Continued evolving PATHSAR from a prototype map/control panel into a more operational SAR planning workspace. Work focused on application branding, startup workflow, map usability, basemap improvements, field layer visibility, and groundwork for future search object/resource planning.
+
+Completed Updates
+
+Application identity
+
+- Created and integrated a PATHSAR application icon.
+- Added icon support in both main.py and LandSARMainWindow.
+- Confirmed the icon displays correctly in the app title bar.
+
+Startup workflow
+
+- Added a dedicated startup scenario intake window.
+- Shifted initial scenario setup out of the main left panel.
+- Main workspace now opens after scenario initialization.
+- Current time is handled automatically instead of requiring manual input.
+- Weather is currently marked as auto_pending for future live weather integration.
+
+Main workspace cleanup
+
+- Removed the heavy duplicate intake experience from the visible main panel.
+- Added a cleaner scenario summary area.
+- Preserved hidden backing widgets so existing geocoding and simulation functions continue working.
+- Began transitioning the app from form-driven to scenario-driven workflow.
+
+Address suggestions
+
+- Improved address suggestion responsiveness.
+- Reduced suggestion delay to make location recall feel faster while typing.
+- Lowered the minimum character threshold for suggestions.
+
+Basemap improvements
+
+- Kept Topo as the default operational basemap.
+- Added Satellite imagery.
+- Added Hybrid imagery layer using satellite imagery with Esri label overlays.
+- Adjusted zoom behavior to reduce disappearing/blank map tiles at high zoom levels.
+
+Toolbar / buttonology foundation
+
+- Began adding a top toolbar for future operational tools.
+- Planned toolbar actions include:
+- Update Scenario
+- Add Clue / Track
+- Center Map
+- Load Roads / Trails / Field Layers
+- Clear Overlay
+- Run Monte Carlo
+- Run Simulation
+- Sector Tools
+- Timeline
+
+Roads, trails, and POI field layers
+
+- Began expanding “Load Roads/Trails” into broader field layer loading.
+- Added planned support for:
+  - roads
+  - trails
+  - trailheads
+  - campgrounds
+  - water towers
+  - ranger stations
+  - parking areas
+  - viewpoints
+  - springs / water points
+- Added logic direction for POIs to render as markers instead of line features.
+- Added hover/popup labeling design for roads, trails, and landmarks.
+- Defined visual layer meanings:
+  - Yellow = roads / vehicle-access routes
+  - Green dashed = trails / footpaths
+  - Cyan = Monte Carlo particle paths
+  - Red/orange = probability heat cells
+  - Blue pin = LKP marker
+  - POI colors planned by feature type
+
+Monte Carlo / overlay usability
+
+- Identified that Monte Carlo layers can visually obscure access layers if not managed carefully.
+- Added direction to keep operational layers brought to front across basemap changes.
+- Planned Monte Carlo layers to be non-interactive where needed so road/trail hover remains usable.
+- Issues Identified / In Progress
+  - OSMnx feature loading is still returning errors related to invalid bbox polygons and NaN geometry calculations.
+  - Roads/trails/POI overlay depends on fixing or stabilizing feature_loader.py.
+  - Satellite and Hybrid will only show trail detail once PATHSAR’s own access/field overlay loads correctly.
+  - Update Scenario button exists but still needs to be fully wired.
+  - Toolbar icons are placeholders and need final buttonology design.
+  - Weather auto-pull is not yet implemented.
+  - Search object and resource inputs still need to be added before initial search setup.
+
+Next Planned Work
+- Stabilize feature_loader.py so roads, trails, hydro, and POIs reliably load.
+- Confirm field layers display across Topo, Hybrid, Satellite, Light, and Streets.
+- Wire Update Scenario button.
+- Add Search Object selection before initial search.
+
+Add Search Resources / Tools available:
+- walking search teams
+- dogs / K9
+- horses
+- ATVs / four-wheelers
+- UTVs
+- drones
+
+Add Add Clue / Track tool for:
+- footprints
+- belongings
+- debris
+- sightings
+- other search clues
+
+Continue toward timeline/time-lapse bar and sectorization tools.
