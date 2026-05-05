@@ -487,3 +487,137 @@ Add Add Clue / Track tool for:
 - other search clues
 
 Continue toward timeline/time-lapse bar and sectorization tools.
+
+---
+
+## Devlog Update: PATHSAR UI + Field Layer Evolution
+
+### April 30- May 5, 2026
+
+Phase X – Sectorization, Terrain Bias, and Operational Workflow
+Overview
+
+This phase focused on transitioning PATHSAR from a visualization tool into a more operationally relevant SAR planning system. Core improvements include terrain-influenced movement modeling, probability-driven sectorization, and the introduction of a sector management interface.
+
+Monte Carlo + Terrain Integration
+Implemented terrain-aware movement using slope and environmental penalties
+Particle movement now reflects realistic behavior (contour following, avoidance of steep terrain)
+Outputs show directional bias rather than uniform spread
+Reduced cell size for higher-resolution probability surfaces
+
+Result:
+More realistic subject movement modeling and tighter probability clustering
+
+Heatmap Refinement
+Reduced grid cell size for increased spatial accuracy
+Adjusted visual styling to reduce blockiness and improve readability
+Improved separation between probability visualization and terrain layers
+
+Result:
+Cleaner probability surfaces with more precise boundaries
+
+Sectorization (Initial Implementation)
+Built automated sector generation from heatmap extent
+Implemented 3×3 grid structure as initial framework
+Added:
+Area calculations (sq mi and acres)
+Width/height estimates
+Priority ranking based on probability density
+Converted sector naming from numeric → A, B, C…
+Sorted sectors by probability (highest = Sector A)
+
+Result:
+Sectors now represent prioritized search areas rather than arbitrary grid divisions
+
+Sector Interaction + Controls
+Click-to-select sector highlighting
+Lock/unlock functionality for assignment control
+Zoom-to-sector capability
+Status feedback integrated into UI
+
+Result:
+Interactive sector management aligned with SAR operational workflows
+
+Sector Management Panel (In Progress)
+Introduced structured panel for sector oversight
+Designed to display:
+Sector priority
+Area
+Status (open/locked/searched)
+Panel dynamically updates with selection and state changes
+
+Next Step:
+Stabilize rendering and finalize layout (Leaflet control integration)
+
+Weather Integration (Initial)
+Live weather pulled automatically based on LKP
+Weather summary displayed in UI (temp, wind, precipitation, humidity)
+Radar overlay temporarily disabled due to tile compatibility issues
+
+Result:
+Weather now informs scenario context without interrupting workflow
+
+Performance Improvements
+Reduced rendering load from particle density and grid resolution
+Improved responsiveness during Monte Carlo execution
+Eliminated visual clutter (removed corridor lines, refined overlays)
+Key Milestone
+
+This phase marks the shift from:
+
+static probability visualization → dynamic, decision-support SAR tool
+
+Next Development Targets
+1. SAR Probability Framework
+
+Add operational metrics to each sector:
+
+POA (Probability of Area)
+POD (Probability of Detection)
+POS (Probability of Success = POA × POD)
+
+Dynamic updates based on:
+
+search coverage
+asset deployment
+clues/finds
+negative search results
+2. Sector Management Expansion
+Full SAROPS-style panel
+Assign teams/assets to sectors
+Mark sectors:
+open
+in progress
+complete
+Manual priority adjustment
+Sector splitting for large/high-value areas
+3. Weather Overlays (Rebuild)
+Replace radar with stable tile source
+Add:
+precipitation influence
+heat/cold effects on movement
+flood/fire constraints
+4. Environmental Constraints
+Integrate:
+water barriers
+terrain difficulty
+access networks
+Influence both:
+movement modeling
+sector prioritization
+5. Fully Automated Workflow
+
+Move toward a single execution path:
+
+Run Simulation →
+  Weather →
+  Terrain →
+  Monte Carlo →
+  Heatmap →
+  Sectorization →
+  Priority Assignment →
+  Operational Panel
+Notes
+Current outputs confirm terrain bias is functioning correctly
+Sector prioritization aligns with probability distribution
+System is ready to transition into full SAR decision-support modeling
